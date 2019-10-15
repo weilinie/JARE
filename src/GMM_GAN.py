@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--reg', type=float, default=1000, help='reg_param')
 parser.add_argument('--mu', type=float, default=4, help='mu')
 parser.add_argument('--sigma', type=float, default=0.06, help='sigma')
-parser.add_argument('--method', type=str, default='conopt', help='reg_method')
+parser.add_argument('--method', type=str, default='jare', help='reg_method')
 config, unparsed = parser.parse_known_args()
 
 # Parameters
