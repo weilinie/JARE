@@ -48,11 +48,11 @@ mus = np.vstack([mu/2.*np.cos(2*np.pi*k/8), mu/2.*np.sin(2*np.pi*k/8)] for k in 
 x_real = mus + sigma*tf.random_normal([batch_size, 2])
 
 if model == 'model1':
-    generator = tf.make_template('generator', generator_func1)
-    discriminator = tf.make_template('discriminator', discriminator_func1)
+    generator = tf.make_template('generator', generator4gmm_func1)
+    discriminator = tf.make_template('discriminator', discriminator4gmm_func1)
 elif model == 'model2':
-    generator = tf.make_template('generator', generator_func2)
-    discriminator = tf.make_template('discriminator', discriminator_func2)
+    generator = tf.make_template('generator', generator4gmm_func2)
+    discriminator = tf.make_template('discriminator', discriminator4gmm_func2)
 else:
     raise NotImplementedError
 
