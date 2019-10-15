@@ -4,8 +4,8 @@ import numpy as np
 import os
 import time
 
-from src.utils import kde
-from src.ops import *
+from utils import kde
+from ops import *
 
 
 tf.reset_default_graph()

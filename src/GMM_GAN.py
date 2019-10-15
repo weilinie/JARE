@@ -5,8 +5,8 @@ import os
 import time
 import argparse
 
-from src.utils import kde
-from src.ops import *
+from utils import kde
+from ops import *
 
 tf.reset_default_graph()
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
