@@ -1,4 +1,7 @@
-## JARE
+## JARE 
+
+A new theoretically motivated regularization method to stabilize the GAN training dynamics. 
+(Please see more details in the paper: https://arxiv.org/abs/1806.09235)
 
 Dependencies: 
 
