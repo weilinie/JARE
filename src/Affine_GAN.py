@@ -42,7 +42,7 @@ discriminator = tf.make_template('discriminator', discriminator4Gaussian_func1)
 
 # g and d output
 z = sigma * tf.random_normal([batch_size, z_dim])
-x_fake = generator(z, x_dim)
+x_fake = generator(z, x_dim, mu)
 d_out_real = discriminator(x_real)
 d_out_fake = discriminator(x_fake)
 

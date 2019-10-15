@@ -6,7 +6,7 @@ from tensorflow.contrib import slim
 #  generator and discriminator for GMM
 ##################################################################################
 # Model 1
-def generator4Gaussian_func1(z, x_dim):
+def generator4Gaussian_func1(z, x_dim, mu):
     phi = tf.get_variable(name='G_param', shape=[1, x_dim], initializer=tf.constant_initializer([0.05, mu + 0.05]))
     x = z + phi
     return x
